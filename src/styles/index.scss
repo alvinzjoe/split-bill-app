@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-button {
+    @apply justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600;
+    &:hover {
+        @apply bg-indigo-700;
+    }
+    &:focus {
+        @apply outline-none ring-2 ring-offset-2 ring-indigo-500;
+    }
+}
+.default-button {
+    @apply bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700;
+    &:hover {
+        @apply bg-gray-50;
+    }
+    &:focus {
+        @apply outline-none ring-2 ring-offset-2 ring-indigo-500;
+    }
+}
+
+.user-select {
+    @apply bg-black overflow-hidden;
+    &.selected {
+        @apply bg-indigo-600
+    }
+}
